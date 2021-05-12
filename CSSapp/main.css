@@ -1,0 +1,43 @@
+html {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+  text-shadow: 3px 3px 1px darkgrey;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+span {
+  color: royalblue;
+}
+
+.span-heading {
+  color: green;
+}
+
+#span-heading {
+  color: cyan;
+}
+
+img[src] {
+  width: 15vh;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+}
+
+p {
+  width: 600px; /* 600 pixels width */
+  margin: 0 auto; /*  */
+  background-color: lightgrey;
+  padding: 20px 20px 20px 20px; /* top right bottom left */
+  border: 5px solid rgba(211, 211, 211, 0.796); /* wide and color */
+}
