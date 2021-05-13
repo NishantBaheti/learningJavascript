@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      class TodoList extends React.Component {
+        addTask = () => {
+          console.log(this._inputElement.value);
+        }
+
+        render() {
+          return (
+            <div>
+              <input ref={(a) => this._inputElement = a}type="text" />
+              <button onClick={this.addTask}> Add task </button>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<TodoList />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
