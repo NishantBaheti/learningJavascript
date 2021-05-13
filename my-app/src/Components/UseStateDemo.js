@@ -13,21 +13,21 @@ export const UseStateDemo = () => {
     function incrementCount() {
         setCount(prevCount => prevCount + 1);
     }
+
     function decrementCount(){
         setCount(prevCount => prevCount - 1);
     }
 
     function incUpdateObject(){
-
         setState(prevState => {
             return { ...prevState,count: prevState.count + 1, lastOperation : 'inc'}
-        })
+        });
     }
 
     function decUpdateObject(){
         setState(prevState => {
             return { ...prevState,count: prevState.count - 1, lastOperation : 'dec'}
-        })
+        });
     }
 
     return (
@@ -43,7 +43,6 @@ export const UseStateDemo = () => {
                 <span> Count : {state.count} | Last Operation : {state.lastOperation} </span>
                 <button className="btn btn-primary" onClick={decUpdateObject}>SUB</button>
             </div>
-
         </div>
     )
 }

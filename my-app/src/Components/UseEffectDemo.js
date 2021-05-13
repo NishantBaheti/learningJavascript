@@ -18,7 +18,7 @@ export const UseEffectDemo = () => {
 
     return (
         <div className="container-fluid">
-            <h2>Use effect demo</h2>
+            <h2>Use effect Demo</h2>
             <div>
                 <button className="btn btn-primary" onClick={() => setResourceType('posts')}>Posts</button>
                 <button className="btn btn-success" onClick={() => setResourceType('users')}>Users</button>
@@ -28,7 +28,7 @@ export const UseEffectDemo = () => {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th scope="col">Data</th>
+                            <th scope="col">{resourceType}</th>
                         </tr>
                     </thead>
                     <tbody>
