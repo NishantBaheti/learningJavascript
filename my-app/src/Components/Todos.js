@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 export const Todos = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <h1> Todos list will come here</h1>
         </div>
     )
