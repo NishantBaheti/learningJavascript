@@ -25,3 +25,8 @@
         Unmounting is when a component is being removed from the DOM
         Method that is called when :
         componentWillUnmount()
+
+- Hooks
+        - Hooks should be on top level inside functioc(exclusively)
+        - Hooks should be in order to load 
+        
