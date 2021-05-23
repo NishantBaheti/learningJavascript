@@ -5,7 +5,9 @@ import { UseStateDemo } from './Components/UseStateDemo';
 import { UseEffectDemo } from './Components/UseEffectDemo';
 import { UseMemoDemo } from './Components/UseMemoDemo';
 import { UseRefDemo } from './Components/UseRefDemo';
+import { ThemeProvider } from './Components/ThemeContext';
 import { UseContextDemo } from './Components/UseContextDemo';
+import { UseReducerDemo } from './Components/UseReducerDemo';
 
 
 function App() {
@@ -20,8 +22,12 @@ function App() {
       <hr />
       <UseRefDemo />
       <hr />
-      <UseContextDemo />
+      <ThemeProvider>
+        <UseContextDemo />
+      </ThemeProvider>
       <hr />
+      <UseReducerDemo />
+      <hr/>
       <UseEffectDemo />
       <hr />
       <Footer />

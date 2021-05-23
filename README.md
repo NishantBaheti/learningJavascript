@@ -51,3 +51,15 @@ When would I use a Hook? If you write a function component and realize you need 
 
   - memoization 
   - caching
+
+### useContext
+  
+  - accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest <MyContext.Provider> above the calling component in the tree.
+  - create contexts we want to use throughout the application but can be changed from one place(button) like theme. create custom hooks to access these contexts in the application.
+  - use provider in from where all the children in provider can access these contexts.
+  - in child components use the context module and custom hooks to access values of contexts.
+
+### useReducer
+
+  - An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method.
+  - useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
