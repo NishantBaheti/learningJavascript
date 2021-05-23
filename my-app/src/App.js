@@ -8,7 +8,7 @@ import { UseRefDemo } from './Components/UseRefDemo';
 import { ThemeProvider } from './Components/ThemeContext';
 import { UseContextDemo } from './Components/UseContextDemo';
 import { UseReducerDemo } from './Components/UseReducerDemo';
-
+import { UseCallbackDemo } from './Components/UseCallbackDemo';
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
       </ThemeProvider>
       <hr />
       <UseReducerDemo />
+      <hr />
+      <UseCallbackDemo />
       <hr/>
       <UseEffectDemo />
       <hr />
